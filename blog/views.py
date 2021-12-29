@@ -1,9 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render,get_object_or_404
 from django.views.generic import View
 
 # Create your views here.
 class blogListView(View):
-    def get(self, request, *args, **kwargs):
+    def get(self,request,*args,**kwargs):     
         context = {
 
         }

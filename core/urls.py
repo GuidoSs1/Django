@@ -20,5 +20,5 @@ from .views import homeView # El punto indica que el archivo o modulo se encuent
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homeView.as_view(), name='home'),
-    path('blog/', include('blog.urls', namespace='blog'))
+    path('blog/', include('blog.urls', namespace='blog')),
 ]
