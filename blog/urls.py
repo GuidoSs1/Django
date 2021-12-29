@@ -1,8 +1,9 @@
 from django.urls import path
-from django.urls.resolvers import URLPattern
+
+from .views import blogListView
 
 app_name=['blog']
 
 urlpatterns = [
-    
+    path('inicio/', blogListView.as_view(), name='home')
 ]
